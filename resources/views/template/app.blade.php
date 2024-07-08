@@ -6,19 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LiveWire Exercise</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
 </head>
 <body>
 <!-- As a link -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/" wire:navigate>User List</a>
-            <a class="navbar-brand" href="/counter" wire:navigate>Counting Sample</a>
-        </div>
-    </nav>
+    @include('includes.nav')
     <h1>Livewire Exercise / Journal by Ian Duyao</h1>
     <hr/>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="p-5">
+        <div class="p-3">
             @yield('content')
         </div>
     </div>

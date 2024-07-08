@@ -17,3 +17,6 @@ Route::get('/',[LivewireController::class, 'home']);
 Route::get('/counter', function(){
     return view('pages.counter');
 });
+Route::get('/myLearning',function(){
+    return view('pages.modules');
+});
